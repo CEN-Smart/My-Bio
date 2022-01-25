@@ -1,83 +1,74 @@
-.bg-dark-transparent {
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-
-/* Remove border from toggler */
-
 .navbar-toggler {
-    border: 0 !important;
+    width: 20px;
+    height: 20px;
+    position: relative;
+    transition: 0.5s ease-in-out;
 }
 
+.navbar-toggler,
 .navbar-toggler:focus,
 .navbar-toggler:active,
 .navbar-toggler-icon:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: 0 !important;
+    outline: none;
+    border: 0;
+    box-shadow: none;
 }
 
-
-/* Lines of the Toggler */
+.navbar-toggler sapn {
+    margin: 0;
+    padding: 0;
+}
 
 .toggler-icon {
-    width: 30px;
+    position: absolute;
+    background-color: #d3531a;
     height: 3px;
-    background-color: #777777;
+    width: 100%;
     display: block;
-    transition: all 0.2s;
+    border-radius: 1px;
+    left: 0;
+    transform: rotate(0deg);
+    transition: 0.25s ease-in-out;
 }
-
-
-/* Adds Space between the lines */
 
 .middle-bar {
-    margin: 5px auto;
+    margin-top: 0px;
 }
 
-
-/* State when navbar is opened (START) */
-
 .navbar-toggler .top-bar {
+    margin-top: 0px;
+    transform: rotate(-45deg);
+}
+
+.navbar-toggler .bottom-bar {
+    margin-top: 0px;
     transform: rotate(45deg);
-    transform-origin: 10% 10%;
 }
 
 .navbar-toggler .middle-bar {
     opacity: 0;
-    filter: alpha(opacity=0);
+    filter: opacity(0);
 }
-
-.navbar-toggler .bottom-bar {
-    transform: rotate(-45deg);
-    transform-origin: 10% 90%;
-}
-
-
-/* State when navbar is opened (END) */
-
-
-/* State when navbar is collapsed (START) */
 
 .navbar-toggler.collapsed .top-bar {
+    margin-top: -20px;
+    transform: rotate(0);
+}
+
+.navbar-toggler.collapsed .bottom-bar {
+    margin-top: 20px;
     transform: rotate(0);
 }
 
 .navbar-toggler.collapsed .middle-bar {
+    filter: opacity(1);
     opacity: 1;
-    filter: alpha(opacity=100);
 }
-
-.navbar-toggler.collapsed .bottom-bar {
-    transform: rotate(0);
-}
-
-
-/* State when navbar is collapsed (END) */
-
-
-/* Color of Toggler when collapsed */
 
 .navbar-toggler.collapsed .toggler-icon {
-    background-color: #777777;
+    background: linear-gradient( 263deg, rgba(252, 74, 74, 1) 0%, rgba(0, 212, 255, 1) 100%);
+}
+
+.navbar-toggler .toggler-icon {
+    background: linear-gradient( 263deg, rgba(252, 74, 74, 1) 0%, rgba(0, 212, 255, 1) 100%);
 }
