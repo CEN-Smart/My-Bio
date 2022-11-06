@@ -367,7 +367,7 @@ section {
 	margin-bottom: 20px;
 	padding-bottom: 20px;
 	position: relative;
-	color: #45505b;
+	color: #a7f3d0;
 }
 
 .section-title h2::before {
@@ -402,7 +402,7 @@ section {
 .about .content h3 {
 	font-weight: 700;
 	font-size: 26px;
-	color: #728394;
+	color: #6bbdfc;
 }
 
 .about .content ul {
@@ -422,6 +422,7 @@ section {
 
 .about .content p:last-child {
 	margin-bottom: 0;
+	line-height: 1.7;
 }
 
 /*--------------------------------------------------------------
@@ -479,7 +480,7 @@ section {
 	display: block;
 	font-weight: 600;
 	font-family: "Poppins", sans-serif;
-	color: #45505b;
+	color: #a7f3d0;
 }
 
 .skills .progress .skill .val {
@@ -506,7 +507,7 @@ section {
 	font-weight: 700;
 	margin-top: 20px;
 	margin-bottom: 20px;
-	color: #45505b;
+	color: #a7f3d0;
 }
 
 .resume .resume-item {
